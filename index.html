@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html land="en-US">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <form id="ticket-info">
+      <div class="form-group">
+        <label for="first-name">What is your first name?</label> <br><br>
+        <input type="text" class="form-control" id="first-name" name="first-name">
+      </div>
+      <div class="form-group">
+        <select name="movie" id="movie-select">
+          <option value="">--Please Choose a movie--</option>
+          <option value="Shutter Island">Shutter Island</option>
+          <option value="Star Wars: The Empire Strikes Back" id="star-wars">Star Wars: The Empire Strikes Back</option>
+          <option value="Top Gun: Maverick">Top Gun: Maverick</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select name="time" id="time-select">
+          <option value="">--Please Choose a time--</option>
+          <option value="10:30a">10:30a</option>
+          <option value="2:30p">2:30p</option>
+          <option value="7:30p">7:30p</option>
+        </select>
+      </div>
+        <div class="form-group">
+        <label for="age-input">How old are you?</label> <br><br>
+        <input type="number" class="form-control" id="age-input" name="age-input">
+      </div>
+      <button type="submit">Buy Ticket</button>
+    </form><br><br>
+    <div id="tickets">
+    </div>
+    <div id="ticket-details" class="hidden"> 
+      <h2 id="Ticket-Header">Ticket Details</h2>
+      <p>Name: <span class="first-name"></span></p>
+      <p>Movie: <span class="movie-select"></span></p>
+      <p>Time: <span class="time-select"></span></p>
+      <p>Age: <span class="age-input"></span></p>
+      <p>Price: <span class="ticket-price"></span></p>
+    </div>
+  </body>
+</html>
